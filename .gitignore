@@ -1,0 +1,28 @@
+# Virtual environment
+venv/
+.env
+
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Logs and database files
+*.log
+*.sqlite3
+
+# Ignore IDE/editor settings
+.vscode/
+.idea/
+*.iml
+
+# Dependencies installed via pip
+*.egg-info/
+pip-log.txt
+
+# Jupyter notebooks
+.ipynb_checkpoints/
+
+# Streamlit cache
+.streamlit/
