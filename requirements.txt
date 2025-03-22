@@ -6,4 +6,4 @@ langchain-core
 langchain-groq
 requests
 flask-cors
-gunicon
+gunicorn
