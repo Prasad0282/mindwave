@@ -50,8 +50,14 @@ class Chatbot:
         self.language = language
         self.prompt = PromptTemplate(
             input_variables=["human_input", "chat_history"],
-            template=f"{ '\n'.join(self.chat_history or []) }Human: {{human_input}}Assistant (in {self.language or 'English'}):"
+            template="{}Human: {{human_input}}Assistant (in {}):".format(
+                '\n'.join(self.chat_history or []),
+                self.language or 'English'
         )
+    )
+ 
+    
+
 
     def is_sensitive(self, message):
         """
